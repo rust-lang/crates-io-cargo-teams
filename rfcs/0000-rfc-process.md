@@ -37,6 +37,16 @@ Many RFCs should still be opened on the main repo. When it's unclear where it
 belongs, it's left to the discretion of the teams to decide which location is
 more appropriate.
 
+Once an RFC is opened, the process would be broadly the same as the main RFC
+repo. One or both teams will be tagged, and any member of either team can
+propose an FCP for an RFC. Entering FCP requries sign-off from all members of
+all assigned teams. After an FCP period of 1 week, a reprensentative from each
+of the assigned teams will indicate whether any comments raised during FCP
+justify returning to development mode, or following through on the disposition
+of the FCP. This does not require full sign-off from the teams, and it is
+expected that the team representative is reporting on the consensus from the
+last team meeting.
+
 # Impact on cargo
 
 ## Things which should have an RFC in the main RFCs repo
