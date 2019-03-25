@@ -43,7 +43,7 @@ affects crates.io, this section can be deleted.
 
 This section should describe, in detail, the changes required to crates.io to
 support this change. This includes details required for implementation, or
-details that affect the Cargo team, but not users of Cargo. If this RFC only
+details that affect the crates.io team, but not users of crates.io. If this RFC only
 affects cargo, this section can be deleted. If the impact on both Cargo and
 crates.io is the same, this can be merged with the previous section.
 
