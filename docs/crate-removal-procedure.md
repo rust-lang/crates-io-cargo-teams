@@ -6,7 +6,15 @@ If we get a DMCA takedown notice, here's what needs to happen:
 
 ## Remove relevant version(s) and/or entire crates from crates.io
 
-TODO specific instructions
+* Remove it from the database:
+
+      heroku run -- cargo run --bin delete-crate crate-name
+	
+  or
+
+      heroku run -- cargo run --bin delete-version crate-name version-number
+
+* Invalidate the CloudFront cache – remove both the relevant readme and crate files. If in doubt, invalidate `/*` to flush everything.
 
 ## Remove relevant version(s) and/or entire crates from docs.rs
 
