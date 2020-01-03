@@ -8,35 +8,21 @@ If we get a DMCA takedown notice, here's what needs to happen:
 
 TODO specific instructions
 
-## Remove relevant version(s) and/or entire crates from docs.rs
+## Remove entire crates from docs.rs
 
-The docs.rs codebase doesn't currently have a builtin way to remove the
-already-generated docs, so the current approach when a DMCA arrives is to
-prevent users accessing the docs at the nginx level. The people who currently
-have permissions to access the server are:
+The docs.rs application supports deleting all the documentation ever published
+of a crate, by running a CLI command. The people who currently have permissions
+to access the server and run it are:
 
-* rustdoc team:
-  * [@onur](https://github.com/onur)
+* docs.rs Team:
   * [@QuietMisdreavus](https://github.com/QuietMisdreavus)
-* infra team:
-  * [@Mark-Simulacrum](https://github.com/Mark-Simulacrum)
   * [@pietroalbini](https://github.com/pietroalbini)
-* People with 1password access
+  * [@onur](https://github.com/onur)
+  * [@jyn514](https://github.com/jyn514)
+* Infrastructure Team:
+  * [@Mark-Simulacrum](https://github.com/Mark-Simulacrum)
+* People with elevated 1password access
 
-One of these people needs to log into the `docsrs.infra.rust-lang.org` machine through the bastion and add
-this snippet to `/home/ubuntu/conf/docs.rs.nginx.conf`:
+You can find the documentation on how to run the command [here][docsrs-howto].
 
-```nginx
-		location /CRATENAME {
-			return 410;
-		}
-		location /crate/CRATENAME {
-			return 410;
-		}
-```
-
-Then reload the nginx configuration:
-
-```
-$ sudo systemctl reload nginx
-```
+[docsrs-howto]: https://forge.rust-lang.org/infra/docs/docs-rs.html#removing-a-crate-from-the-website
