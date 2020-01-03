@@ -14,6 +14,10 @@ If we get a DMCA takedown notice, here's what needs to happen:
 
       heroku run -- cargo run --bin delete-version [crate-name] [version-number]
 
+* Remove the crate or version from the index. To remove an entire crate, remove the entire crate file. For a version, remove the line corresponding to the relevant version.
+
+* Remove the crate archive(s) and readme file(s) from S3.
+
 * Invalidate the CloudFront cache – remove both the relevant readme and crate files. If in doubt, invalidate `/*` to flush everything.
 
 ## Remove relevant version(s) and/or entire crates from docs.rs
