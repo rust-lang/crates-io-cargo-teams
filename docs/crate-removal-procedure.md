@@ -27,7 +27,6 @@ of a crate, by running a CLI command. The people who currently have permissions
 to access the server and run it are:
 
 * docs.rs Team:
-  * [@QuietMisdreavus](https://github.com/QuietMisdreavus)
   * [@pietroalbini](https://github.com/pietroalbini)
   * [@onur](https://github.com/onur)
   * [@jyn514](https://github.com/jyn514)
@@ -37,4 +36,4 @@ to access the server and run it are:
 
 You can find the documentation on how to run the command [here][docsrs-howto].
 
-[docsrs-howto]: https://forge.rust-lang.org/infra/docs/docs-rs.html#removing-a-crate-from-the-website
+[docsrs-howto]: https://forge.rust-lang.org/docs-rs/maintenance.html#removing-a-crate-from-the-website
