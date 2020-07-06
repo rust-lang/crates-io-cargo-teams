@@ -29,6 +29,7 @@ to access the server and run it are:
 * docs.rs Team:
   * [@pietroalbini](https://github.com/pietroalbini)
   * [@jyn514](https://github.com/jyn514)
+  * [@onur](https://github.com/onur)
 * Infrastructure Team:
   * [@Mark-Simulacrum](https://github.com/Mark-Simulacrum)
 * People with elevated 1password access
