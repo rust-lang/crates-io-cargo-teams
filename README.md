@@ -1,7 +1,8 @@
-# crates-io-cargo-teams
-the home of the crates io and cargo teams
+# crates-io-cargo-teams Archive
 
-This repo is where the crates-io and cargo teams organize. RFCs and meeting agendas, as well as policy and planning documents, live here.
+This repo is no longer used for organization of the crates-io and Cargo teams. Please check these places for up-to-date information:
 
-### crates.io team
-The crates-io team meets every Friday at [10:30am ET](https://www.thetimezoneconverter.com/?t=10%3A30AM&tz=ET%20(Eastern%20Time)) in the [#infra/crates-io channel on the Rust Discord](https://discordapp.com/channels/442252698964721669/448525639469891595) and anyone may attend to observe.
+- [Rust governance page](https://www.rust-lang.org/governance)
+- [Rust Teams structure](https://github.com/rust-lang/team)
+- [Crates.io repo](https://github.com/rust-lang/crates.io)
+- [Cargo repo](https://github.com/rust-lang/cargo)
